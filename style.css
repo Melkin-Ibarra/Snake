@@ -1,0 +1,284 @@
+﻿
+
+@font-face {
+    font-family: 'bit';
+    src: url('fonts/8bit.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b7c4c8ff;
+    font-family: bit;
+    animation: fadeIn 1s;
+}
+
+.marca {
+    margin: 0px;
+    height: 48px;
+    margin-left: 450px;
+}
+
+canvas {
+    width: 500px;
+    height: 500px;
+    border: 1px ;
+    border-radius: 20px;
+    margin-left:41px;
+    background-color:white;
+    display:none;
+}
+
+#como_jugar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: 41px;
+    border-radius: 20px;
+}
+
+h2 {
+    background-color: #e4389dff;
+    color: white;
+    width: 250px;
+    font-size:21px;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius:10px;
+    margin-bottom: -16px;
+    z-index: 1;
+}
+
+.botones_jugar {
+    background-color: #431768ff;
+    width: 453px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botones_jugar img{
+    margin: 30px;
+}
+
+#explicacion {
+    font-size:16px;
+    background-color: #e9c70bff;
+    margin-top: 10px;
+    width: 453px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+#volumen_creditos {
+    background-color: #431768ff;
+    margin: 10px;
+    border-radius: 10px;
+    width: 453px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#volumen_creditos div{
+    width: 50%;
+}
+
+h3{
+    color:white;
+    text-align:center;
+}
+ h3 + p {
+        font-size: 12px;
+        color:white;
+}
+
+#volumen {
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    height: 85px;
+}
+
+.vol{
+    border: none;
+    margin:1px;
+    border-radius:5px;
+}
+
+.btn1 {
+    width: 22px;
+    height: 18px;
+}
+
+.btn2 {
+    width: 22px;
+    height: 31px;
+    background-color: #e4389dff;
+}
+
+.btn3 {
+    width: 22px;
+    height: 45px;
+}
+
+.btn4 {
+    width: 22px;
+    height: 60px;
+}
+
+.btn5 {
+    width: 22px;
+    height: 66px;
+}
+
+#borde {
+    width: 582px;
+    height: 589px;
+    background-color: #808080ff;
+    margin-top: 0px;
+    margin-left: 35px;
+    border-radius: 20px;
+}
+
+#consola {
+    display:none;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #ff6600ff;
+    width: 651px;
+    height: 888px;
+    border-radius: 20px;
+
+}
+
+#botonIniciar {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botonIniciar div {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botonIniciar h1{
+    margin: 0px;
+}
+
+#botonIniciar p{
+    font-size: 20px;
+}
+
+#botonIniciar img {
+   width: 200px;
+   margin: 20px;
+   animation: fadeIn 0.3s;
+   animation: tilt-n-move-shaking 1s infinite;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-left: 41px;
+    font-family: bit;
+    font-size:25px;
+}
+
+#botones{
+    margin-top: 32px;
+    display:flex;
+}
+
+#izq{
+    margin-left: 35px;
+    width: 320px;
+    height:180px;
+}
+
+#izq button {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: white;
+    font-size:25px;
+}
+
+.w {
+    display: block;
+    margin-left: 115px;
+    font-family:bit;
+}
+
+.a {
+    margin-left: 50px;
+    font-family: bit;
+}
+
+.d {
+    margin-left: 50px;
+    font-family: bit;
+}
+
+.s {
+    display: block;
+    margin-top: -15px;
+    margin-left: 115px;
+    font-family: bit;
+}
+
+#der button {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 40px;
+    font-family: bit;
+    font-size: 25px;
+}
+
+.reiniciar {
+    display: none;
+    font-family: bit;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }

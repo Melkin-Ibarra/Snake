@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Culebrita</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="botonIniciar">
+        <div>
+            <h1>Hola, Bienvenido a</h1>
+            <h2>Mi versión del clásico Snake</h2>
+            <p>
+                Este proyecto fue desarrollado íntegramente en JavaScript, utilizando Canvas y la API Web Audio por defecto.
+                Aunque soy consciente de que podría haber optado por herramientas especializadas en juegos, gráficos vectoriales
+                o incluso audio, mi objetivo era profundizar en los conceptos fundamentales de la programación en JavaScript.
+            </p>
+        </div>
+        <a onclick="cambioInicial()"><img src="boton.svg" /></a>
+    </div>
+    <div id="consola">
+        <div class="marca"><img src="marca.svg" /></div>
+        <div id="borde">
+            <h1><span id="puntaje">0</span> puntos</h1>
+            <canvas id="mapa">
+            </canvas>
+            <div id="como_jugar">
+                <h2>Como Jugar</h2>
+                <div class="botones_jugar">
+                    <img src="btn_izq.svg" />
+                    <img src="btn_der.svg" />
+                </div>
+                <div id="explicacion">
+                    Por cada punto la serpiente
+                    aumenta su velocidad, no
+                    choques contra la pared ni
+                    contra tu propia cola.
+                </div>
+                <div id="volumen_creditos">
+                    <div>
+                        <h3>Volumen</h3>
+                        <div id="volumen">
+                            <button class="btn1 vol" Onclick="volumen1(0,0)"></button>
+                            <button class="btn2 vol" Onclick="volumen1(0.25,1)"></button>
+                            <button class="btn3 vol" Onclick="volumen1(0.50,2)"></button>
+                            <button class="btn4 vol" Onclick="volumen1(0.75,3)"></button>
+                            <button class="btn5 vol" Onclick="volumen1(1,4)"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Creditos</h3>
+                        <p>
+                            Disenado y codificado por
+                            melkin ibarra
+                            musica y efectos por
+                            pixabay.com
+                            tipografia 8 bit wonder
+                            dafont.com
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="botones">
+            <div id="izq">
+                <button Onclick="moverArriba()" class="w">w</button>
+                <button Onclick="moverIzquierda()" class="a">a</button>
+                <button Onclick="moverDerecha()" class="d">d</button>
+                <button Onclick="moverAbajo()" class="s">s</button>
+            </div>
+            <div id="der">
+                <button id="iniciar" Onclick="iniciarMapa()">GO!</button>
+                <button id="reiniciar" Onclick="reiniciarJuego()" class="reiniciar">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="Script1.js"></script>
+</body>
+</html>
